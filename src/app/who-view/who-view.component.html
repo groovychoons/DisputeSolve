@@ -21,10 +21,20 @@
     </md-grid-tile>
 </md-grid-list>
 
-<md-grid-list [cols]="1" rowHeight="300px" gutterSize="10px">
+<md-grid-list [cols]="1" rowHeight="460px" gutterSize="10px">
     <md-grid-tile>
         <md-card>
-            <div class="title">What is your relationship with them?</div>
+            <div class="title">What is your relationship with them?   |   They are a:</div>
+            <div class="options"><br>
+                <button md-button (click)="onChange3($event, 'Family member')">Family member</button><br><br>
+                <button md-button (click)="onChange3($event, 'Friend/Acquaintance')">Friend / Acquaintance</button><br><br>
+                <button md-button (click)="onChange3($event, 'Partner (Not cohabiting)')">Partner (Not cohabiting)</button><br><br>                
+                <button md-button (click)="onChange3($event, 'Partner (Cohabiting)')">Partner (Cohabiting)</button><br><br>
+                <button md-button (click)="onChange3($event, 'Employer')">Employer</button><br><br>
+                <button md-button (click)="onChange3($event, 'Service Provider')">Service Provider</button><br><br>
+                <button md-button (click)="onChange3($event, 'Business Associate')">Business Associate</button>
+    
+            </div>
         </md-card>
     </md-grid-tile>
 </md-grid-list>

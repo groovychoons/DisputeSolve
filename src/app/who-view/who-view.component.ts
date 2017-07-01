@@ -12,13 +12,15 @@ import { DataService } from '../data.service';
 export class WhoViewComponent implements OnInit {
 
   onChange($event, value) {
-        alert("You selected some text!");
-
     localStorage.setItem('selectedWhoAmI', value);
   }
 
   onChange2($event, value) {
     localStorage.setItem('selectedWhoAreThey', value);
+  }
+
+  onChange3($event, value) {
+    localStorage.setItem('selectedRelationship', value);
   }
 
 

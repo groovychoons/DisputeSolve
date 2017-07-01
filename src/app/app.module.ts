@@ -10,6 +10,7 @@ import { LandingViewComponent } from './landing-view/landing-view.component';
 import { MetricCardComponent } from './metric-card/metric-card.component';
 import { LegalViewComponent } from './legal-view/legal-view.component';
 import { WhoViewComponent } from './who-view/who-view.component';
+import { WhatViewComponent } from './what-view/what-view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WhoViewComponent } from './who-view/who-view.component';
     LandingViewComponent,
     MetricCardComponent,
     LegalViewComponent,
-    WhoViewComponent
+    WhoViewComponent,
+    WhatViewComponent
   ],
   imports: [
     BrowserModule,

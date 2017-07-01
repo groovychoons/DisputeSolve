@@ -24,6 +24,7 @@ export class LegalViewComponent implements OnInit {
 
   IAm: string = localStorage.getItem('selectedWhoAmI');
   TheyAre: string = localStorage.getItem('selectedWhoAreThey');
+  Relationship: string = localStorage.getItem('selectedRelationship');
 
   ngOnInit() {
 		this.getData();
