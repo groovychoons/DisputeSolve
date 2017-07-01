@@ -1,9 +1,33 @@
-
-<md-grid-list cols="3" rowHeight="300px" gutterSize="10px" *ngFor= "let metric of data">
+<md-grid-list [cols]="2" rowHeight="300px" gutterSize="15px">
     <md-grid-tile>
         <md-card>
-            <div class="title"> {{ metric.options[0] }} test </div>
+            <div class="title">Who are you?</div>
+            <div class="options"><br>
+                <button md-button>Individual</button><br><br>
+                <button md-button>Business</button><br><br>
+                <button md-button>Sole Trader</button>
+            </div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">Who is on the other side?</div>
+            <div class="options"><br>
+                <button md-button>Individual</button><br><br>
+                <button md-button>Business</button><br><br>
+                <button md-button>Government Body</button>
+            </div>
         </md-card>
     </md-grid-tile>
 </md-grid-list>
+
+<md-grid-list [cols]="1" rowHeight="300px" gutterSize="10px">
+    <md-grid-tile>
+        <md-card>
+            <div class="title">What is your relationship with them?</div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>
+
 <router-outlet></router-outlet>
+

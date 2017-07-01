@@ -1,22 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
-import { Metric } from '../metric';
-import { MetricDataService } from '../metric-data.service';
+import { Options } from '../options';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-metric-card',
   templateUrl: './metric-card.component.html',
   styleUrls: ['./metric-card.component.css'],
-  providers: [ MetricDataService ]
+  providers: [ DataService ]
 })
+
 export class MetricCardComponent implements OnInit {
 
-  data: Metric[];
+  @Input()	
+  dataset: string = 'initial';
 
-  constructor(private metricDataService: MetricDataService) { }
+  initial: Options[];
+  secondary: Options[];
+
+  constructor(private dataService: DataService) { }
 
   getData(): void {
-		this.data = this.metricDataService.getData();
+		this.initial = this.dataService.getInitial();
+    this.secondary = this.dataService.getSecondary();
 	}
 
   ngOnInit() {

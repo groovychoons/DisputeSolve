@@ -1,22 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Metric } from '../metric';
-import { MetricDataService } from '../metric-data.service';
+import { Options } from '../options';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-who-view',
   templateUrl: './who-view.component.html',
   styleUrls: ['./who-view.component.css'],
-  providers: [ MetricDataService ]
+  providers: [ DataService ]
 })
 export class WhoViewComponent implements OnInit {
 
-  data: Metric[];
+  initial: Options[];
+  secondary: Options[];
 
-  constructor(private metricDataService: MetricDataService) { }
+  constructor(private dataService: DataService) { }
 
   getData(): void {
-		this.data = this.metricDataService.getData();
+		this.initial = this.dataService.getInitial();
+    this.secondary = this.dataService.getSecondary();
 	}
 
   ngOnInit() {

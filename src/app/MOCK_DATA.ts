@@ -1,10 +1,16 @@
-import { Metric } from './metric';
+import { Options } from './options';
 
-export const MOCK_DATA: Metric[] = [
-{
-	id: 1,
-	title: ['Do you want to take legal action?   →', 'Do you want to respond to a legal document?   →'],
-	options: ['Who?', 'What?', 'When?', 'Where?', 'Why?', 'Start again']
-},
-
+export const INITIAL: Options[] = [
+	{option: 'Do you want to take legal action?   →', route: ''},
+	{option: 'Do you want to respond to a legal document?   →', route: ''}
 ];
+
+export const SECONDARY: Options[] = [
+	{option: 'Who?', route: 'who'},
+	{option: 'What?', route: ''},
+	{option: 'When?', route: ''},
+	{option: 'Where?', route: ''},
+	{option: 'Why?', route: ''},
+	{option: 'Start again', route: ''},
+];
+
