@@ -1,0 +1,22 @@
+
+md-card {
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 0px;
+    display: table;
+}
+
+md-grid-list {
+    margin: 30px;
+    margin-bottom: 10px;
+}
+
+.title {
+    padding: 70px;
+    font-size: 2em;
+    display: table-cell;
+    vertical-align: middle;
+}

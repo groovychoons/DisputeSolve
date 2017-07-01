@@ -1,4 +1,21 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-container>
+  <md-sidenav mode="side" opened="true" #sidenav >
+    <div class="logobox">
+    </div>
+  </md-sidenav>
+
+  <md-toolbar>
+    <div class="nav-left">
+      <div class="home" routerLink="/">{{title}}</div>
+    </div>
+
+</md-toolbar>
+
+
+
+<app-metric-card></app-metric-card>
+
+</md-sidenav-container>
+
+
 <router-outlet></router-outlet>
