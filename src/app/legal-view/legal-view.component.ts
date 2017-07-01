@@ -22,6 +22,9 @@ export class LegalViewComponent implements OnInit {
     this.secondary = this.dataService.getSecondary();
 	}
 
+  IAm: string = localStorage.getItem('selectedWhoAmI');
+  TheyAre: string = localStorage.getItem('selectedWhoAreThey');
+
   ngOnInit() {
 		this.getData();
   }

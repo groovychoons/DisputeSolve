@@ -11,18 +11,21 @@ import { DataService } from '../data.service';
 })
 export class WhoViewComponent implements OnInit {
 
-  initial: Options[];
-  secondary: Options[];
+  onChange($event, value) {
+        alert("You selected some text!");
 
-  constructor(private dataService: DataService) { }
+    localStorage.setItem('selectedWhoAmI', value);
+  }
 
-  getData(): void {
-		this.initial = this.dataService.getInitial();
-    this.secondary = this.dataService.getSecondary();
-	}
+  onChange2($event, value) {
+    localStorage.setItem('selectedWhoAreThey', value);
+  }
+
+
+  constructor() { }
+
 
   ngOnInit() {
-		this.getData();
   }
 
 }

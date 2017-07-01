@@ -3,19 +3,19 @@
         <md-card>
             <div class="title">Who are you?</div>
             <div class="options"><br>
-                <button md-button>Individual</button><br><br>
-                <button md-button>Business</button><br><br>
-                <button md-button>Sole Trader</button>
+                <button md-button (click)="onChange($event, 'Individual')">Individual</button><br><br>
+                <button md-button (click)="onChange($event, 'Business')">Business</button><br><br>
+                <button md-button (click)="onChange($event, 'Sole Trader')">Sole Trader</button>
             </div>
         </md-card>
     </md-grid-tile>
     <md-grid-tile>
         <md-card>
-            <div class="title">Who is on the other side?</div>
+            <div class="title">Who is the other party?</div>
             <div class="options"><br>
-                <button md-button>Individual</button><br><br>
-                <button md-button>Business</button><br><br>
-                <button md-button>Government Body</button>
+                <button md-button (click)="onChange2($event, 'Individual')">Individual</button><br><br>
+                <button md-button (click)="onChange2($event, 'Business')">Business</button><br><br>
+                <button md-button (click)="onChange2($event, 'Government Body')">Government Body</button>
             </div>
         </md-card>
     </md-grid-tile>
@@ -25,6 +25,14 @@
     <md-grid-tile>
         <md-card>
             <div class="title">What is your relationship with them?</div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>
+
+<md-grid-list [cols]="1" rowHeight="53px" gutterSize="10px">
+    <md-grid-tile>
+        <md-card>
+            <div class="title second" [routerLink]="['/action']">Continue →</div>
         </md-card>
     </md-grid-tile>
 </md-grid-list>

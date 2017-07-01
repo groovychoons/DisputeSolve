@@ -1,7 +1,35 @@
 <md-grid-list [cols]="3" rowHeight="300px" gutterSize="10px">
-    <md-grid-tile *ngFor= "let options of secondary">
+    <md-grid-tile>
         <md-card>
-            <div class="title" [routerLink]="['/action', options.route]"> {{ options.option }} </div>
+            <div class="title" [routerLink]="['/action/who']">Who?</div>
+            <br>I am a:<br>{{ IAm }}<br>
+            <br>The other party is a:<br>{{ TheyAre }}<br>
+            <br>Our relationship is:<br>{{ Relationship }}<br>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">What?</div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">Where?</div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">When?</div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">Why?</div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">Start again</div>
         </md-card>
     </md-grid-tile>
 </md-grid-list>

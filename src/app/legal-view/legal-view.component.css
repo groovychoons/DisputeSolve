@@ -1,10 +1,10 @@
 
 md-card {
     height: 90%;
-    width: 90%;
-    background-color: white;
+    width: 90%;    
+    background-color: #2c3a47;
     text-align: center;
-    color: black;
+    color: white;
     padding: 0px;
     display: table;
     cursor: pointer;
@@ -17,8 +17,8 @@ md-grid-list {
 }
 
 .title {
-    padding: 70px;
-    font-size: 2em;
-    display: table-cell;
-    vertical-align: middle;
+    background-color: #314150;
+    padding: 13px;
+    margin: 0px;
+    font-size: 1.4em;
 }
