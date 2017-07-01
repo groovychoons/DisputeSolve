@@ -8,12 +8,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingViewComponent } from './landing-view/landing-view.component';
 import { MetricCardComponent } from './metric-card/metric-card.component';
+import { LegalViewComponent } from './legal-view/legal-view.component';
+import { WhoViewComponent } from './who-view/who-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingViewComponent,
-    MetricCardComponent
+    MetricCardComponent,
+    LegalViewComponent,
+    WhoViewComponent
   ],
   imports: [
     BrowserModule,

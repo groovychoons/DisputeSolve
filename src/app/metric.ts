@@ -1,5 +1,6 @@
 
 export class Metric {
 	id: number;
-	title: string;
+	title: string[];
+	options: string[];
 }
