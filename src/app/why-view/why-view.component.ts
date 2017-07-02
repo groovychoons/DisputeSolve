@@ -5,20 +5,16 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './why-view.component.html',
   styleUrls: ['./why-view.component.css']
 })
-export class WhyViewComponent implements OnInit {
 
-  txt: string = '';
+export class WhyViewComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
   }
 
-
   onChange($event, value) {
-
-    this.txt = this.txt + '\r\n - ' + value;
-    localStorage.setItem('remedies', this.txt);
+    localStorage.setItem('remedies', value);
   }
 
 }

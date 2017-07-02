@@ -10,10 +10,10 @@
     <md-grid-tile>
         <md-card>
             <div class="title" [routerLink]="['/action/what']">What?</div>
-            <br>Was it a contract? : {{ IsContract }}<br>
-            <br>Is the contact still in force? : {{ inForce }}<br>
-            <br>Was there a breach of contract? : {{ breach }}<br>
-            <br>Did you suffer loss due to this event? : {{ loss }}<br>
+            <br>Was it a contract?: {{ IsContract }}<br>
+            <br>Is the contact still in force?: {{ inForce }}<br>
+            <br>Was there a breach of contract?: {{ breach }}<br>
+            <br>Did you suffer loss due to this event?: {{ loss }}<br>
         </md-card>
     </md-grid-tile>
     <md-grid-tile>
@@ -35,7 +35,8 @@
     <md-grid-tile>
         <md-card>
             <div class="title" [routerLink]="['/action/why']">Why?</div>
-            <br>
+            <br> You are seeking:
+            <br> - {{ remedies }} <br>
         </md-card>
     </md-grid-tile>
     <md-grid-tile>

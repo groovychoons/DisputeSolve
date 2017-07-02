@@ -1,18 +1,74 @@
-<md-card>
+<md-card class="card">
   <div class="title">Case Analysis and Timeline (CAT)</div>
   <div class="subtitle">Case Analysis</div>
   <div class="options">
     The issue relates to a contractual dispute between <u>{{ myName}}</u> 
     and <u>{{ theirName }}</u> regarding <u>{{ explanation }}</u>. <br><br>
-    It was agreed that <u>{{ myName }}</u> would offer <u>{{ explanation2 }}</u> for <u>{{ explanation3 }}</u>. <u>{{ myName }}</u> paid 
+    It was agreed that <u>{{ myName }}</u> would offer <u>{{ explanation2 }}</u> for <u>{{ explanation3 }}</u>. 
+    <u>{{ myName }}</u> paid 
     <u>{{ theirName }}</u> the <u>{{ explanation3 }}</u> on <u>{{ contractStart }}</u> and 
     <u>{{ theirName }}</u>  delivered on 
     {{ contractStart }}. 
     <br><br>
     The problem was that {{ explanation4 }}. The agreement 
      occurred in the <u>{{ tookPlaceIn }}</u>. 
-    As a result of the breach, <u>{{ myName }}</u> is seeking [remedies 
-    chosen].
+    As a result of the breach, <u>{{ myName }}</u> is seeking <u>{{ remedies }}</u>.
   </div>
   <div class="subtitle">Timeline</div>
+  <md-grid-list [cols]="3" rowHeight="200px" gutterSize="15px">
+    <md-grid-tile>
+        <md-card class="cardd">
+            <div class="title"> {{ contractStart }} </div>
+            <div class="optionss"><br>
+                Your contract with {{ theirName }} began.
+            </div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card class="cardd">
+            <div class="title"> {{ issueStart }} </div>
+            <div class="optionss"><br>
+                The problem, that {{ explanation4 }}, began.
+            </div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card  class="cardd">
+            <div class="title"> {{ issueFound }} </div>
+            <div class="optionss"><br>
+                You found out about this problem.
+            </div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>
+  <div class="subtitle">Alternation Dispute Dialogue E-Resolution (ADDER)</div>
+  <md-grid-list [cols]="2" rowHeight="600px" gutterSize="15px">
+    <md-grid-tile>
+        <md-card class="adr">
+            <div class="title"> Alternatives to litigation </div>
+            <div class="optionsss">Alternative Dispute Resolution can often be cheaper, quicker, and simpler than pursuing a matter in court. This approach can be more flexible and less formal. 
+<br>There are several options for this: <br>
+-	Mediation – a discussion of the case between yourself, the other side, and a third party who helps you to try reach a solution. If you would like to continue with this please <u>click here.</u><br>
+-	Adjudication – an independent person considers your dispute and makes a decision for you. For a list of providers of this, please <u>click here.</u><br>
+-	Arbitration – this is similar to adjudication, but the decision made is binding, and the process is slightly more formal. For more information on this please <u>click here.</u><br>
+-	Ombudsman – if your complaint is with a public body, if may be worth approaching the ombudsman. For more information please <u>click here.</u><br>
+
+            </div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card class = "adr">
+            <div class="title">Mediation Platform</div>
+            <div class="optionsss"><br>
+                Would you like to invite the other party to respond to your dispute?
+                <br>
+            <md-input-container class="full">
+              <input mdInput placeholder="Email">
+          </md-input-container><br>
+              <button md-button>Send invite</button><br>
+
+            </div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>
 </md-card>

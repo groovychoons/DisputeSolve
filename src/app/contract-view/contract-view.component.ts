@@ -25,6 +25,7 @@ export class ContractViewComponent implements OnInit {
   inForce: string = localStorage.getItem('inForce');
   breach: string = localStorage.getItem('breach');
   loss: string = localStorage.getItem('loss');
+  remedies: string = localStorage.getItem('remedies');
 
   explanation: string = localStorage.getItem('explanation');
   explanation2: string = localStorage.getItem('explanation2');
