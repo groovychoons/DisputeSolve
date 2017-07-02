@@ -1,6 +1,6 @@
 
 md-card {
-    height: 300px;
+    height: 500px;
     width: 90%;    
     background-color: #2c3a47;
     text-align: center;
@@ -16,4 +16,17 @@ md-card {
     padding: 13px;
     margin: 0px;
     font-size: 1.3em;
+}
+
+.subtitle {
+    background-color: #41586d;
+    padding: 13px;
+    margin: 0px;
+    font-size: 1.1em;
+}
+
+.options {
+    background-color: white;
+    color: black;
+    padding: 60px 90px;
 }

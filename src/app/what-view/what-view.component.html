@@ -64,6 +64,33 @@
   </div>
 </md-card>
 
+<md-card>
+  <div class="title">Which product or service is your claim about?</div>
+  <div class="options"><br>
+    <md-input-container class="full">
+      <textarea mdInput placeholder="Explain your claim here" (keyup)="explanation($event)" id="explanation"></textarea>
+    </md-input-container>
+  </div>
+  <div class="title">What did you expect to receive?</div>
+  <div class="options"><br>
+    <md-input-container class="full">
+      <textarea mdInput placeholder="Explain your expectations" (keyup)="explanation2($event)" id="explanation2"></textarea>
+    </md-input-container>
+  </div>
+  <div class="title">What did you pay/offer for this service or product?</div>
+  <div class="options"><br>
+    <md-input-container class="full">
+      <textarea mdInput placeholder="Answer here" (keyup)="explanation3($event)" id="explanation3"></textarea>
+    </md-input-container>
+  </div>
+  <div class="title">Explain the problem.</div>
+  <div class="options"><br>
+    <md-input-container class="full">
+      <textarea mdInput placeholder="Answer here" (keyup)="explanation4($event)" id="explanation4"></textarea>
+    </md-input-container>
+  </div>
+</md-card>
+
 <md-grid-list [cols]="1" rowHeight="50px" gutterSize="10px">
     <md-grid-tile>
         <md-card class="continue">

@@ -35,6 +35,7 @@ export class LegalViewComponent implements OnInit {
   inForce: string = localStorage.getItem('inForce');
   breach: string = localStorage.getItem('breach');
   loss: string = localStorage.getItem('loss');
+  remedies: string = localStorage.getItem('remedies');
 
   ngOnInit() {
 		this.getData();

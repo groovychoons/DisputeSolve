@@ -1,5 +1,22 @@
-<p>
-  Why are you filing the claim
-You want the other party to:
-(Select all that apply)
-</p>
+
+<md-card>
+  <div class="title">Why are you filing this claim?<br>You want the other party to:</div>
+    <div class="subtitle">Select all that apply</div>
+
+  <div class="options"><br>
+    <button md-button (click)="onChange($event, 'pay monetary compensation')">Pay monetary compensation</button><br>
+    <button md-button (click)="onChange($event, 'take specific action')">Take specific action</button><br>
+    <button md-button (click)="onChange($event, 'refrain from specific action')">Refrain from specific action</button><br>
+    <button md-button (click)="onChange($event, 'be publicly censured')">Be publicly censured</button><br>
+    <button md-button (click)="onChange($event, 'apologise')">Apologise</button><br>
+    <br>
+  </div>
+</md-card>
+
+<md-grid-list [cols]="1" rowHeight="50px" gutterSize="10px">
+    <md-grid-tile>
+        <md-card class="continue">
+            <div class="title second" [routerLink]="['/action']">Continue →</div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>
