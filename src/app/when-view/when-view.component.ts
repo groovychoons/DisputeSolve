@@ -8,7 +8,7 @@ import { IMyDpOptions, IMyDateModel } from 'mydatepicker';
 })
 export class WhenViewComponent implements OnInit {
 
-   private myDatePickerOptions: IMyDpOptions = {
+   public myDatePickerOptions: IMyDpOptions = {
         dateFormat: 'dd/mm/yyyy',
         sunHighlight: false,
     };
