@@ -1,3 +1,67 @@
-<p>
-  what-view works!
-</p>
+<md-card>
+  <div class="title">Was there an agreement?</div>
+  <div class="options"><br>
+    Were you and another involved? 
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    <span mdTooltip="You both share a view as to what you and the other will be doing">
+    Did you come to the same terms?</span>
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    <span mdTooltip="e.g. money or a service">
+    Were both of you offering something? </span>
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    <span mdTooltip="i.e. rather than just something between friends">
+    Was it intended to be a legal agreement? </span>
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    <span mdTooltip="e.g. threatened with violence or a situation that you couldn’t face (such as your business would otherwise fail)">
+    Did you enter the contract freely? </span>
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    <strong>Did you answer yes to all of the above?</strong>
+    <button md-button (click)="onChange($event, 'Yes')">Yes</button>
+    <button md-button (click)="onChange($event, 'No')">No</button><br>
+  </div>
+</md-card>
+
+<md-card>
+  <div class="title">Is the contract still in force?</div>
+  <div class="options"><br>
+   Was someone dishonest about anything in the contract?
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    Was someone under a mistake belief when the contract was entered?
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    Has something gone wrong such that the contract can no longer be performed?
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    Was it intended to be a legal agreement?
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    <strong>Did you answer no to all of the above?</strong>
+    <button md-button (click)="onChange2($event, 'Yes')">Yes</button>
+    <button md-button (click)="onChange2($event, 'No')">No</button><br>
+  </div>
+</md-card>
+
+<md-card>
+  <div class="title">Was there a breach of a contract?</div>
+  <div class="options"><br>
+    Has someone party to the agreement not done what he said he would do?
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    Is it clear what you were suppposed to do?
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    <strong>Did you answer yes to all of the above?</strong>
+    <button md-button (click)="onChange2($event, 'Yes')">Yes</button>
+    <button md-button (click)="onChange2($event, 'No')">No</button><br>
+  </div>
+</md-card>
+
+<md-card>
+  <div class="title">Did you suffer loss due to this event?</div>
+  <div class="options"><br>
+    Did you get less money than expected?
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    Did you receive a good/service that was less valuable than you expected?
+    <button md-button>Yes</button> <button md-button>No</button><br>
+   <span mdTooltip="e.g. you expected to do something with the good or service, and couldn't and so lost further business."> Did you suffer any other further loss? </span>
+    <button md-button>Yes</button> <button md-button>No</button><br>
+    <strong>Did you answer yes to any of the above?</strong>
+    <button md-button (click)="onChange2($event, 'Yes')">Yes</button>
+    <button md-button (click)="onChange2($event, 'No')">No</button><br>
+  </div>
+</md-card>

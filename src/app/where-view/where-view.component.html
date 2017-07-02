@@ -1,0 +1,37 @@
+<md-grid-list [cols]="3" rowHeight="200px" gutterSize="15px">
+    <md-grid-tile>
+        <md-card>
+            <div class="title">Are you a resident/based in the UK?</div>
+            <div class="options"><br>
+                <button md-button (click)="onChange($event, 'UK')">Yes</button><br><br>
+                <button md-button (click)="onChange($event, 'Rest of the world')">No</button><br><br>
+            </div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">Is the other party a resident/based in the UK?</div>
+            <div class="options"><br>
+                <button md-button (click)="onChange2($event, 'UK')">Yes</button><br><br>
+                <button md-button (click)="onChange2($event, 'Rest of the world')">No</button><br><br>
+            </div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">Did the matter take place in the UK?</div>
+            <div class="options"><br>
+                <button md-button (click)="onChange3($event, 'UK')">Yes</button><br><br>
+                <button md-button (click)="onChange3($event, 'Rest of the world')">No</button><br><br>
+            </div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>
+
+<md-grid-list [cols]="1" rowHeight="50px" gutterSize="10px">
+    <md-grid-tile>
+        <md-card>
+            <div class="title second" [routerLink]="['/action']">Continue →</div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>

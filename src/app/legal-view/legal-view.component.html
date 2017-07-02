@@ -10,26 +10,31 @@
     <md-grid-tile>
         <md-card>
             <div class="title" [routerLink]="['/action/what']">What?</div>
+            <br>Was it a contract?<br>{{ IsContract }}<br>
+
         </md-card>
     </md-grid-tile>
     <md-grid-tile>
         <md-card>
-            <div class="title">Where?</div>
+            <div class="title" [routerLink]="['/action/where']">Where?</div>
+            <br>I am based in the:<br>{{ iLiveIn }}<br>
+            <br>The other party is based in the:<br>{{ theyLiveIn }}<br>
+            <br>The matter took place in the:<br>{{ tookPlaceIn }}<br>
         </md-card>
     </md-grid-tile>
     <md-grid-tile>
         <md-card>
-            <div class="title">When?</div>
+            <div class="title" [routerLink]="['/action/when']">When?</div>
         </md-card>
     </md-grid-tile>
     <md-grid-tile>
         <md-card>
-            <div class="title">Why?</div>
+            <div class="title" [routerLink]="['/action/why']">Why?</div>
         </md-card>
     </md-grid-tile>
     <md-grid-tile>
         <md-card>
-            <div class="title">Start again</div>
+            <div class="title">View your contract</div>
         </md-card>
     </md-grid-tile>
 </md-grid-list>
