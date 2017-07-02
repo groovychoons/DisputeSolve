@@ -10,8 +10,10 @@
     <md-grid-tile>
         <md-card>
             <div class="title" [routerLink]="['/action/what']">What?</div>
-            <br>Was it a contract?<br>{{ IsContract }}<br>
-
+            <br>Was it a contract? : {{ IsContract }}<br>
+            <br>Is the contact still in force? : {{ inForce }}<br>
+            <br>Was there a breach of contract? : {{ breach }}<br>
+            <br>Did you suffer loss due to this event? : {{ loss }}<br>
         </md-card>
     </md-grid-tile>
     <md-grid-tile>
@@ -25,6 +27,9 @@
     <md-grid-tile>
         <md-card>
             <div class="title" [routerLink]="['/action/when']">When?</div>
+            <br>The agreement began on:<br>{{ contractStart }}<br>
+            <br>The issue occurred on:<br>{{ issueStart }}<br>
+            <br>I knew about the issue on:<br>{{ issueFound }}<br>
         </md-card>
     </md-grid-tile>
     <md-grid-tile>

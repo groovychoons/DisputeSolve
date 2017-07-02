@@ -1,0 +1,19 @@
+
+md-card {
+    height: 300px;
+    width: 90%;    
+    background-color: #2c3a47;
+    text-align: center;
+    color: white;
+    padding: 0px;
+    display: table;
+    font-size: 1.08em;
+    margin: 50px;
+
+}
+.title {
+    background-color: #314150;
+    padding: 13px;
+    margin: 0px;
+    font-size: 1.3em;
+}

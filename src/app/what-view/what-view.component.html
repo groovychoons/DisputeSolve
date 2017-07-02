@@ -26,11 +26,9 @@
   <div class="options"><br>
    Was someone dishonest about anything in the contract?
     <button md-button>Yes</button> <button md-button>No</button><br>
-    Was someone under a mistake belief when the contract was entered?
+    Was someone under a mistaken belief when the contract was entered?
     <button md-button>Yes</button> <button md-button>No</button><br>
     Has something gone wrong such that the contract can no longer be performed?
-    <button md-button>Yes</button> <button md-button>No</button><br>
-    Was it intended to be a legal agreement?
     <button md-button>Yes</button> <button md-button>No</button><br>
     <strong>Did you answer no to all of the above?</strong>
     <button md-button (click)="onChange2($event, 'Yes')">Yes</button>
@@ -46,8 +44,8 @@
     Is it clear what you were suppposed to do?
     <button md-button>Yes</button> <button md-button>No</button><br>
     <strong>Did you answer yes to all of the above?</strong>
-    <button md-button (click)="onChange2($event, 'Yes')">Yes</button>
-    <button md-button (click)="onChange2($event, 'No')">No</button><br>
+    <button md-button (click)="onChange3($event, 'Yes')">Yes</button>
+    <button md-button (click)="onChange3($event, 'No')">No</button><br>
   </div>
 </md-card>
 
@@ -61,7 +59,15 @@
    <span mdTooltip="e.g. you expected to do something with the good or service, and couldn't and so lost further business."> Did you suffer any other further loss? </span>
     <button md-button>Yes</button> <button md-button>No</button><br>
     <strong>Did you answer yes to any of the above?</strong>
-    <button md-button (click)="onChange2($event, 'Yes')">Yes</button>
-    <button md-button (click)="onChange2($event, 'No')">No</button><br>
+    <button md-button (click)="onChange4($event, 'Yes')">Yes</button>
+    <button md-button (click)="onChange4($event, 'No')">No</button><br>
   </div>
 </md-card>
+
+<md-grid-list [cols]="1" rowHeight="50px" gutterSize="10px">
+    <md-grid-tile>
+        <md-card class="continue">
+            <div class="title second" [routerLink]="['/action']">Continue →</div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>

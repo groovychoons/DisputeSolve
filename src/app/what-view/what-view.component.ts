@@ -12,15 +12,15 @@ export class WhatViewComponent implements OnInit {
   }
   
   onChange2($event, value) {
-    localStorage.setItem('selectedIsContract2', value);
+    localStorage.setItem('inForce', value);
   }
 
   onChange3($event, value) {
-    localStorage.setItem('selectedIsContract3', value);
+    localStorage.setItem('breach', value);
   }
 
   onChange4($event, value) {
-    localStorage.setItem('selectedIsContract4', value);
+    localStorage.setItem('loss', value);
   }
   constructor() { }
 

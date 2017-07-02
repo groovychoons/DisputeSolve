@@ -29,6 +29,12 @@ export class LegalViewComponent implements OnInit {
   iLiveIn: string = localStorage.getItem('iLiveIn');
   theyLiveIn: string = localStorage.getItem('theyLiveIn');
   tookPlaceIn: string = localStorage.getItem('tookPlaceIn');
+  contractStart: string = localStorage.getItem('contractStart');
+  issueStart: string = localStorage.getItem('issueStart');
+  issueFound: string = localStorage.getItem('issueFound');
+  inForce: string = localStorage.getItem('inForce');
+  breach: string = localStorage.getItem('breach');
+  loss: string = localStorage.getItem('loss');
 
   ngOnInit() {
 		this.getData();

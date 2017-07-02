@@ -1,3 +1,37 @@
-<p>
-  when-view works!
-</p>
+<md-grid-list [cols]="3" rowHeight="200px" gutterSize="15px">
+    <md-grid-tile>
+        <md-card>
+            <div class="title">When did the agreement begin?</div>
+            <div class="options"><br><br>
+              <my-date-picker [options]="myDatePickerOptions"
+                (dateChanged)="onDateChanged($event)"></my-date-picker>            
+              </div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">When did this issue occur?</div>
+            <div class="options"><br><br>
+              <my-date-picker [options]="myDatePickerOptions"
+                (dateChanged)="onDateChanged2($event)"></my-date-picker>
+            </div>
+        </md-card>
+    </md-grid-tile>
+    <md-grid-tile>
+        <md-card>
+            <div class="title">When did you find out about this issue?</div>
+            <div class="options"><br>
+              <my-date-picker [options]="myDatePickerOptions"
+                (dateChanged)="onDateChanged3($event)"></my-date-picker>
+            </div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>
+
+<md-grid-list [cols]="1" rowHeight="50px" gutterSize="10px">
+    <md-grid-tile>
+        <md-card>
+            <div class="title second" [routerLink]="['/action']">Continue →</div>
+        </md-card>
+    </md-grid-tile>
+</md-grid-list>

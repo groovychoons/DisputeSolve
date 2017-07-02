@@ -8,6 +8,7 @@ import { WhatViewComponent } from './what-view/what-view.component';
 import { WhereViewComponent } from './where-view/where-view.component';
 import { WhenViewComponent } from './when-view/when-view.component';
 import { WhyViewComponent } from './why-view/why-view.component';
+import { ContractViewComponent } from './contract-view/contract-view.component';
 
 const routes: Routes = [
   { path: '',  component: LandingViewComponent },
@@ -17,7 +18,7 @@ const routes: Routes = [
   { path: 'action/where', component: WhereViewComponent },
   { path: 'action/when', component: WhenViewComponent },
   { path: 'action/why', component: WhyViewComponent },
-
+  { path: 'contract', component: ContractViewComponent },
 ];
 
 @NgModule({

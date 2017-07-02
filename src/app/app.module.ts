@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MyDateRangePickerModule } from 'mydaterangepicker';
+import { MyDatePickerModule } from 'mydatepicker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,7 +40,7 @@ import 'hammerjs';
     AppRoutingModule,
     MaterialModule,
     BrowserAnimationsModule,
-    MyDateRangePickerModule
+    MyDatePickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
